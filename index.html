@@ -1743,7 +1743,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1738589262249),
+    lastupdate: new Date(1738589510044),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2523,9 +2523,326 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://moonl0323.github.io/2025/02/03/用户关系服务/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="MOONL的随记">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="MOONL的随记">
+    <meta itemprop="description" content="记录一些关于编程的思考">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/02/03/%E7%94%A8%E6%88%B7%E5%85%B3%E7%B3%BB%E6%9C%8D%E5%8A%A1/"  itemprop="url">
+        Feb 3, 2025
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        用户关系服务业务架构说明
+业务背景：
+用户之间有互动交流，让用户可以更容易发现和关注其它用户的动态。
+根据用户的关注可以做个性化推荐。
+用户可以更容易发现自己和关注自己感兴趣的内容，留住用户。
+
+服务接口职责
+关注和取消关注接口：用户可以关注别的用户也可以取消对别的用户的关注。
+
+查询用户关注列表接口：可以查看用户正在关注哪些其它的用户，按照最新的关注时间进行排序。
+
+查询用户粉丝列表接口：...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-02-03T21:31:44+08:00">2025-02-03</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/02/03/%E7%94%A8%E6%88%B7%E5%85%B3%E7%B3%BB%E6%9C%8D%E5%8A%A1/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://moonl0323.github.io/2025/02/03/亿级流量系统架构设计与实践勘误/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="MOONL的随记">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="MOONL的随记">
+    <meta itemprop="description" content="记录一些关于编程的思考">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/02/03/%E4%BA%BF%E7%BA%A7%E6%B5%81%E9%87%8F%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5%E5%8B%98%E8%AF%AF/"  itemprop="url">
+        Feb 3, 2025
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        亿级流量系统架构设计与实践勘误
+p256 图7-4 应该是审核号大于线上版本号，这里反了，图的逻辑有问题
+p317 覆盖索引那里，应该是”空间换时间“而不是”时间换空间“
+
+
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-02-03T21:31:44+08:00">2025-02-03</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/02/03/%E4%BA%BF%E7%BA%A7%E6%B5%81%E9%87%8F%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5%E5%8B%98%E8%AF%AF/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://moonl0323.github.io/2025/02/03/内容发布系统实际开发/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="MOONL的随记">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="MOONL的随记">
+    <meta itemprop="description" content="记录一些关于编程的思考">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91/"  itemprop="url">
+        Feb 3, 2025
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        内容发布系统实际开发首先建表：
+1234567891011121314151617181920212223242526CREATE TABLE item_info (    item_id BIGINT PRIMARY KEY,    creator_id BIGINT,    online_version INT,    online_image_uris VARCHAR(255),   ...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-02-03T21:31:44+08:00">2025-02-03</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://moonl0323.github.io/2025/02/03/内容发布系统/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="MOONL的随记">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="MOONL的随记">
+    <meta itemprop="description" content="记录一些关于编程的思考">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/"  itemprop="url">
+        Feb 3, 2025
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        内容发布系统
+设计背景及实际问题1.内容是形式多样性：可以是短文字，长文字，图片，音频，视频等，怎么存？
+2.发布内容可能存在问题，如何检测审核？
+3.内容渠道很多，比如主页，推荐流，好友动态，搜索框等，怎么样让这些内容渠道知道用户发布的内容呢？
+4.内容一般读多写少，怎么样做到高并发？
+
+内容存储设计我们一般数据库用关系型数据库mysql，但是这会有几个问题：
+1.首先，只能存字符串类型的...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-02-03T21:31:44+08:00">2025-02-03</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://moonl0323.github.io/2025/02/03/架构说明/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="MOONL的随记">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="MOONL的随记">
+    <meta itemprop="description" content="记录一些关于编程的思考">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2025/02/03/%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/"  itemprop="url">
+        Feb 3, 2025
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        Elysium-Link项目的系统架构详细设计用户关系服务业务架构说明
+业务背景：
+用户之间有互动交流，让用户可以更容易发现和关注其它用户的动态。
+根据用户的关注可以做个性化推荐。
+用户可以更容易发现自己和关注自己感兴趣的内容，留住用户。
+
+服务接口职责
+关注和取消关注接口：用户可以关注别的用户也可以取消对别的用户的关注。
+
+查询用户关注列表接口：可以查看用户正在关注哪些其它的用户，按照最新...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2025-02-03T21:31:44+08:00">2025-02-03</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2025/02/03/%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
