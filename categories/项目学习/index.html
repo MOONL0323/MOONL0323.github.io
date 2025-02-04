@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  
-  <link rel="canonical" href="http://MOONL0323.github.io/2025/02/03/内容发布系统/"/>
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="http://MOONL0323.github.io/categories/项目学习/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,19 +34,17 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Unknown Moon</title>
+  <title>分类：项目学习 - Unknown Moon</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="记录一些关于编程的思考 - MOONL(林凯圳) - Unknown Moon">
   
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Unknown Moon">
-<meta property="og:url" content="http://moonl0323.github.io/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/index.html">
+<meta property="og:url" content="http://moonl0323.github.io/categories/%E9%A1%B9%E7%9B%AE%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Unknown Moon">
-<meta property="og:description" content="内容发布系统 设计背景及实际问题1.内容是形式多样性：可以是短文字，长文字，图片，音频，视频等，怎么存？ 2.发布内容可能存在问题，如何检测审核？ 3.内容渠道很多，比如主页，推荐流，好友动态，搜索框等，怎么样让这些内容渠道知道用户发布的内容呢？ 4.内容一般读多写少，怎么样做到高并发？  内容存储设计我们一般数据库用关系型数据库mysql，但是这会有几个问题： 1.首先，只能存字符串类型的数据，">
+<meta property="og:description" content="记录一些关于编程的思考">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2025-02-03T13:31:44.934Z">
-<meta property="article:modified_time" content="2024-12-23T18:11:42.369Z">
 <meta property="article:author" content="MOONL(林凯圳)">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2695,7 +2693,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper post dock' style="display: ;">
+      <div id="half" class='cover-wrapper  dock' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2771,9 +2769,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
+
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://moonl0323.github.io/2025/02/03/内容发布系统/">
+  
+    
+      
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://moonl0323.github.io/2024/12/01/架构说明/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Unknown Moon">
   </span>
@@ -2782,385 +2796,83 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="记录一些关于编程的思考">
   </span>
   
-
-
+  
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  <div class="article-meta" id="top">
-    
-    
-    
-      <span hidden itemprop="name headline">
-        
-      </span>
-    
-  </div>
-
-
-  <div id="layoutHelper-page-plugins"></div>
-  <div id="post-body" itemprop="articleBody">
-    <h1 id="内容发布系统"><a href="#内容发布系统" class="headerlink" title="内容发布系统"></a>内容发布系统</h1><hr>
-<h2 id="设计背景及实际问题"><a href="#设计背景及实际问题" class="headerlink" title="设计背景及实际问题"></a>设计背景及实际问题</h2><p>1.内容是形式多样性：可以是短文字，长文字，图片，音频，视频等，怎么存？</p>
-<p>2.发布内容可能存在问题，如何检测审核？</p>
-<p>3.内容渠道很多，比如主页，推荐流，好友动态，搜索框等，怎么样让这些内容渠道知道用户发布的内容呢？</p>
-<p>4.内容一般读多写少，怎么样做到高并发？</p>
-<hr>
-<h2 id="内容存储设计"><a href="#内容存储设计" class="headerlink" title="内容存储设计"></a>内容存储设计</h2><p>我们一般数据库用关系型数据库mysql，但是这会有几个问题：</p>
-<p>1.首先，只能存字符串类型的数据，并不支持存图片，音视频呀这些，除非暴力转。</p>
-<p>2.哪怕是字符串类型，只要是长文本就不太适合。因为我们拿InnoDB引擎举例子，内部是使用B+树来存的，数据一般存到叶子节点，如果太长了就会占很多空间，影响查询效率。所以实际上InnoDB会将真正的数据放在磁盘的另一个地方，也就是说叶子节点存的是引用。所以这样子就会多一次IO了，影响效率。</p>
-<p>所以综上不应该用mysql存所有数据，但是我们可以模仿InnoDB，也就是表是mysql的，存的是元数据，实际的一些比如长文本呀，音视频是存在别的地方的。</p>
-<h3 id="内容元信息设计："><a href="#内容元信息设计：" class="headerlink" title="内容元信息设计："></a>内容元信息设计：</h3><p>我们先来设计元数据表：</p>
-<p>我们要两张表，一张是信息表item_info：存的是真正决定对外发布的内容元信息。一张是内容修改历史记录表item_record：用于应对内容的修改操作，每次修改后的内容数据都会先存到这里面来，以便提供内容修改历史记录的查询途径，最重要的是，等待此内容修改被审核通过后再写到信息表中。</p>
-<p>item_info表：</p>
-<table>
-<thead>
-<tr>
-<th>字段名</th>
-<th>类型</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>item_id</td>
-<td>int64</td>
-<td>内容唯一标识，主键</td>
-</tr>
-<tr>
-<td>creator_id</td>
-<td>int64</td>
-<td>特指创作者ID，是特殊的用户ID</td>
-</tr>
-<tr>
-<td>online_version</td>
-<td>int</td>
-<td>线上内容版本号</td>
-</tr>
-<tr>
-<td>online_image_uris</td>
-<td>string</td>
-<td>线上内容的相关图片URI列表，其被序列化为String形式</td>
-</tr>
-<tr>
-<td>online_video_id</td>
-<td>int64</td>
-<td>线上内容的相关视频的唯一标识</td>
-</tr>
-<tr>
-<td>online_text_uri</td>
-<td>string</td>
-<td>线上内容的相关长文本URI，其被序列化为String形式</td>
-</tr>
-<tr>
-<td>latest_version</td>
-<td>int</td>
-<td>最新变更的内容版本</td>
-</tr>
-<tr>
-<td>create_time</td>
-<td>int64</td>
-<td>内容创建时间</td>
-</tr>
-<tr>
-<td>update_time</td>
-<td>int64</td>
-<td>内容变更时间</td>
-</tr>
-<tr>
-<td>visibility</td>
-<td>int</td>
-<td>线上内容的可见范围：私密，好友可见，粉丝可见，所有人可见</td>
-</tr>
-<tr>
-<td>status</td>
-<td>int</td>
-<td>内容的状态：待审核，正常展示，被删除，被下架</td>
-</tr>
-<tr>
-<td>extra</td>
-<td>string</td>
-<td>其它可拓展字段的键值对形式的序列化，应对个性化需求</td>
-</tr>
-</tbody></table>
-<p>item_record表：</p>
-<table>
-<thead>
-<tr>
-<th>字段名</th>
-<th>类型</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>item_id</td>
-<td>int64</td>
-<td>此次变更操作关联的内容ID</td>
-</tr>
-<tr>
-<td>latest_vesion</td>
-<td>int64</td>
-<td>此次变更内容的版本号</td>
-</tr>
-<tr>
-<td>latest_status</td>
-<td>int</td>
-<td>枚举此次变更内容的审核状态：待审核，审核通过，审核拒绝</td>
-</tr>
-<tr>
-<td>latest_reason</td>
-<td>int</td>
-<td>如果此次变更内容的审核状态是拒绝。则此字段枚举了审核拒绝的原因，比如涉恐涉黄侵权等</td>
-</tr>
-<tr>
-<td>latest_image_uris</td>
-<td>string</td>
-<td>与此次变更内容相关的图片URI列表，其被序列化为String形式</td>
-</tr>
-<tr>
-<td>latest_video_id</td>
-<td>int64</td>
-<td>与此次变更内容相关的视频唯一标识</td>
-</tr>
-<tr>
-<td>latest_text_uri</td>
-<td>string</td>
-<td>此次变更内容的最新长文本文件</td>
-</tr>
-<tr>
-<td>update_time</td>
-<td>int64</td>
-<td>此次内容的变更时间</td>
-</tr>
-</tbody></table>
-<p>之所以需要两张表是因为每次内容变更内容后，都不一定能够立刻将内容发布上线，所有item_info表主要存的是内容基本信息。而item_record主要存的是内容变更记录，审核后才会将变更记录替换到item_info中去，相当于暂存待生效的内容元信息。</p>
-<h3 id="内容主体存储设计："><a href="#内容主体存储设计：" class="headerlink" title="内容主体存储设计："></a>内容主体存储设计：</h3><p>短文本我们可以用分布式kv存储系统或者分布式文档数据库，后者比较简单使用。</p>
-<p>长文本&#x2F;图片&#x2F;音视频 我们使用分布式文件存储或者分布式对象存储系统来存。</p>
-<h2 id="音视频转码："><a href="#音视频转码：" class="headerlink" title="音视频转码："></a>音视频转码：</h2><p>音视频转码可以提供不同质量的音视频以满足不同用户的硬件设备和网络需求，先不做。</p>
-<h2 id="内容审核设计（审核中心系统）："><a href="#内容审核设计（审核中心系统）：" class="headerlink" title="内容审核设计（审核中心系统）："></a>内容审核设计（审核中心系统）：</h2><h3 id="什么时候送审？"><a href="#什么时候送审？" class="headerlink" title="什么时候送审？"></a>什么时候送审？</h3><p>如果只要用户发布内容或者修改内容就送审的话，显然虽然这种方案是最保险的但是高并发的情况下，显然是审核不完的，很消耗资源和时间。</p>
-<p>所以我们换种思路：</p>
-<p>我们来思考一下：</p>
-<p>1.什么样体量的内容更容易造成负面影响？显然是要么内容曝光度很高要么是这个作者很多粉丝。</p>
-<p>2.说明样的人发布的作品更可能违规？显然是那些经常被举报或者他之前的作品经常被拒绝通过的。</p>
-<p>所以我们按照这两个思路设计:</p>
-<p>1.首先粉丝超过10000人的作者发布或者修改内容时要送审。</p>
-<p>2.如果最近远端时间被举报超过10次或者最近发布的作品被拒绝超过10次的用户发布新内容或者修改时要送审。</p>
-<p>3.如果某个内容浏览量超过500ci，点赞点踩或者收藏量评价量超过300次的内容，当这个内容修改时要送审。</p>
-<p>4.如果有3个用户以上投诉的内容，也要送审。</p>
-<h3 id="如何审核内容？"><a href="#如何审核内容？" class="headerlink" title="如何审核内容？"></a>如何审核内容？</h3><p>人工智能和人工审核结合，先不展开。</p>
-<h3 id="审核中心对外交互："><a href="#审核中心对外交互：" class="headerlink" title="审核中心对外交互："></a>审核中心对外交互：</h3><p>发布系统将内容发送到审核中心，审核中心将内容的审核结果返回给内容发布系统，所以二者适合使用基于消息队列的异步化形式进行交互。</p>
-<p>需要两个消息队列主题：</p>
-<table>
-<thead>
-<tr>
-<th>消息队列主题</th>
-<th>含义</th>
-<th>生产者</th>
-<th>消费者</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>event_audit_content</td>
-<td>内容送审</td>
-<td>内容发布系统</td>
-<td>审核中心</td>
-</tr>
-<tr>
-<td>event_audit_result</td>
-<td>内容审核完成</td>
-<td>审核中心</td>
-<td>内容发布系统</td>
-</tr>
-</tbody></table>
-<p>交互具体流程如下：</p>
-<p>1.当内容满足审核条件时（比如流量大的作品，大v发布，内容被投诉），内容发布系统会向event_audit_content消息队列发送消息，消息内容是item_id（内容唯一标识）和version（内容版本号），用于告知审核中心需要审核某内容的某版本。</p>
-<p>2.审核中心收到event_audit_content新内容之后，根据item_id获取内容的全部信息然后排队审核。</p>
-<p>3.内容审核完成之后，发送到event_audit_result消息队列中去，消息内容是：item_id（内容唯一标识），version（内容版本号），audit_result（审核结果）和reason（不通过的原因，如果审核结果是“拒绝通过的话”）。</p>
-<p>4.内容发布系统收到event_audit_result中新消息后，会做相应的处理。</p>
-<hr>
-<h2 id="内容全生命周期管理设计"><a href="#内容全生命周期管理设计" class="headerlink" title="内容全生命周期管理设计"></a>内容全生命周期管理设计</h2><h3 id="内容创建设计："><a href="#内容创建设计：" class="headerlink" title="内容创建设计："></a>内容创建设计：</h3><p>1.如果新创建的内容包含图片，就先将图片上传到后端的分布式对象存储系统中，然后返回一个URI列表image_uris。如果包含长文本，也是上传返回对应URI text_uri。</p>
-<p>2.如果包含视频，就上传到专门的视频服务，返回video_id（先不做）。</p>
-<p>3.客户端携带创作者ID,内容文本，image_uris，text_uri，video_id信息请求内容发布系统。</p>
-<p>4.为新创建的内容生成一个基于时间戳的唯一ID，作为内容的唯一标识。</p>
-<p>5.将内容元信息存到item_info表中，填充item_id，creator_id，visibility，create_time,update_time字段，如果因为创作者条件需要审核就设置online_version字段为0，表示暂未创建成功，并将latest_version设置为1，作为此次内容的版本。将status设置为“待审核”。如果不需要审核就是直接将online_version和latest_version设置为1，表示内容发布了。</p>
-<p>6.如果内容包含短文本，就将短文本存到redis中去，key为{item_id}_{version}，value就是短文本内容。</p>
-<p>7.将信息存到item_record中，如果需要送审就将latest_status设置为“待审核”，如果不需要直接设置成“审核通过”。</p>
-<p>8，如果需要审核就按之前说的异步推到消息队列。</p>
-<p>架构图如下：</p>
-<p><img src="D:\note\picture\4.png" class="lazyload" data-srcset="D:\note\picture\4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h3 id="内容修改设计："><a href="#内容修改设计：" class="headerlink" title="内容修改设计："></a>内容修改设计：</h3><p>流程和前面的创建差不多，只不过是修改的适合要考虑是否要送审。</p>
-<p>如果修改之前已经达到送审的播放量，互动量的条件阈值，那么这一次修改需要送审：</p>
-<p>1.有新增的图片，长文本，替换了新视频等等都是经过分布式对象存储系统。</p>
-<p>2.填充字段。</p>
-<p>3.查item_info中latest_version字段+1。</p>
-<p>4.将元信息填到item_record表，设置item_record中的latest_status设置为”待审核“。</p>
-<p>5.然后发给审核中心。</p>
-<p>如果不需要审核：</p>
-<p>前面基本一样，然后将元信息存到item_record表中，设置其中latest_status字段为”已上线“。</p>
-<p>如果创作者没有改动内容本身，比只是调整了内容的可见性，则直接更新item_info表即可。</p>
-<h3 id="内容审核结果处理与版本控制设计："><a href="#内容审核结果处理与版本控制设计：" class="headerlink" title="内容审核结果处理与版本控制设计："></a>内容审核结果处理与版本控制设计：</h3><p>内容发布系统在收到event_audit_result消息队列的审核结果之后：</p>
-<p>1.如果审核结果是通过，那么就将item_record表中的item_id，version的暂存数据覆盖到item_info表中去，表示内容发布了。</p>
-<p>2.覆盖审核结果是不通过，那么就要设置item_record中latest_status为”审核拒绝“，并且填原因到latest_reason。</p>
-<h4 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h4><p>假设我有用户短时间做了三次更新，编号分别是1，2，3，假设审核时间是1&gt;2&gt;3，那么就是最终的结果是1覆盖了所有，但是其实我们希望的是最后一次更新去覆盖，也就是说，我们要保证消息队列消息的顺序。</p>
-<h4 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h4><p>很简单，因为版本号是递增的，所以我们去对比版本号就好了。</p>
-<p>具体如下：</p>
-<p>如果审核拒绝了，那么不进行下一步，如果通过了，如果online_version&#x3D;version,说明此次审核内容是线上内容可能达到阈值了，将结果写入item_info中的status字段。</p>
-<p>如果online_version&lt;version说明审核结果版本比现实的新，就item_record替换item_info表数据就好了。</p>
-<p>如果online_version&gt;version说明审核结果版本落后了，就继续下一步了。</p>
-<p>流程图如下：<img src="D:\note\picture\5.png" class="lazyload" data-srcset="D:\note\picture\5.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h3 id="内容删除和下架设计："><a href="#内容删除和下架设计：" class="headerlink" title="内容删除和下架设计："></a>内容删除和下架设计：</h3><p>采用软删除，直接标记item_info表中的status为”被删除“或者”被下架“。</p>
-<hr>
-<h2 id="内容分发设计"><a href="#内容分发设计" class="headerlink" title="内容分发设计"></a>内容分发设计</h2><p>我们内容发布系统应该和内容分发渠道进行解耦，所以自然而然的会想到使用消息队列来解决。</p>
-<p>如图：</p>
-<p><img src="D:\note\picture\6.png" class="lazyload" data-srcset="D:\note\picture\6.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<hr>
-<h2 id="内容展示设计"><a href="#内容展示设计" class="headerlink" title="内容展示设计"></a>内容展示设计</h2>
-  </div>
-  
   
     
-    <div class='footer'>
-       <!-- 参考资料、相关资料等 -->
-      
-       <!-- 相关文章 -->
-      
-      <!-- 版权声明组件 -->
-      
-      <!-- 打赏组件 -->
-      
-    </div>
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2024/12/01/%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/"  itemprop="url">
+        Elysium-Link项目的系统架构详细设计
+      </a>
+    </h2>
   
-  
-    
-
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-12-24T02:11:42+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年12月24日</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
+  <div class='md article-desc' itemprop="articleBody">
     
       
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://moonl0323.github.io/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/&title= - Unknown Moon&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://moonl0323.github.io/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/&title= - Unknown Moon&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://moonl0323.github.io/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/&title= - Unknown Moon&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-    <!-- Custom Files bottomMeta begin -->
-    
-    <!-- Custom Files bottomMeta end -->
-  </div>
-
-
-  
-  
-
-  
-    <div class="prev-next">
-      
-        <a class='prev' href='/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>2025年2月3日</p>
-          <p class='content'>内容发布系统实际开发首先建表：
-1234567891011121314151617181920212223242526CREATE TABLE item_info (    item_id BI...</p>
-        </a>
-      
-      
-        <a class='next' href='/2024/12/01/%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/'>
-          <p class='title'>Elysium-Link项目的系统架构详细设计<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Elysium-Link项目的系统架构详细设计用户关系服务业务架构说明
+        Elysium-Link项目的系统架构详细设计用户关系服务业务架构说明
 业务背景：
 用户之间有互动交流，让用户可以更容易发现和关注其它用户的动态。
 根据用户的关注可以做个性化推荐。
-用户可以更容...</p>
-        </a>
+用户可以更容易发现自己和关注自己感兴趣的内容，留住用户。
+
+服务接口职责
+关注和取消关注接口：用户可以关注别的用户也可以取消对别的用户的关注。
+
+查询用户关注列表接口：可以查看用户正在关注哪些其它的用户，按照最新...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://beta.glilmu.com/i/2022/12/05/1xv9ka.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://beta.glilmu.com/i/2022/12/05/1xv9ka.png">
+            <meta itemprop="name" content="MengFanjun">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-12-01T00:00:00+08:00">2024-12-01</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E9%A1%B9%E7%9B%AE%E5%AD%A6%E4%B9%A0/">项目学习</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E9%A1%B9%E7%9B%AE%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">项目学习</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2024/12/01/%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
       
     </div>
   
-  <!-- Custom Files postEnd begin-->
-  
-  <!-- Custom Files postEnd end-->
-</article>
 
+</div>
 
-  
-
-
-  <article class="post white-box shadow floatable blur" id="comments">
-    <span hidden>
-      <meta itemprop="discussionUrl" content="/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/index.html#comments">
-    </span>
-    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+          </div>
+        
+      
     
-
-    <div id="layoutHelper-comments"></div>
-
-  </article>
-
-
+  </section>
+  
+    
+  
 
 
-
-
+    
+  
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3241,31 +2953,57 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-    
   
-
-
-<div class="widget-sticky pjax">
-
-  
-  
-
-
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+  <section class="widget category desktop pjax">
     
   <header>
     
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
     
   </header>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E8%83%8C%E6%99%AF%E5%8F%8A%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98"><span class="toc-text">设计背景及实际问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%AD%98%E5%82%A8%E8%AE%BE%E8%AE%A1"><span class="toc-text">内容存储设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%85%83%E4%BF%A1%E6%81%AF%E8%AE%BE%E8%AE%A1%EF%BC%9A"><span class="toc-text">内容元信息设计：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E4%B8%BB%E4%BD%93%E5%AD%98%E5%82%A8%E8%AE%BE%E8%AE%A1%EF%BC%9A"><span class="toc-text">内容主体存储设计：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9F%B3%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%81%EF%BC%9A"><span class="toc-text">音视频转码：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%AE%A1%E6%A0%B8%E8%AE%BE%E8%AE%A1%EF%BC%88%E5%AE%A1%E6%A0%B8%E4%B8%AD%E5%BF%83%E7%B3%BB%E7%BB%9F%EF%BC%89%EF%BC%9A"><span class="toc-text">内容审核设计（审核中心系统）：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E9%80%81%E5%AE%A1%EF%BC%9F"><span class="toc-text">什么时候送审？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%AE%A1%E6%A0%B8%E5%86%85%E5%AE%B9%EF%BC%9F"><span class="toc-text">如何审核内容？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%A1%E6%A0%B8%E4%B8%AD%E5%BF%83%E5%AF%B9%E5%A4%96%E4%BA%A4%E4%BA%92%EF%BC%9A"><span class="toc-text">审核中心对外交互：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%85%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%AE%A1%E7%90%86%E8%AE%BE%E8%AE%A1"><span class="toc-text">内容全生命周期管理设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%88%9B%E5%BB%BA%E8%AE%BE%E8%AE%A1%EF%BC%9A"><span class="toc-text">内容创建设计：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E4%BF%AE%E6%94%B9%E8%AE%BE%E8%AE%A1%EF%BC%9A"><span class="toc-text">内容修改设计：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%AE%A1%E6%A0%B8%E7%BB%93%E6%9E%9C%E5%A4%84%E7%90%86%E4%B8%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E8%AE%BE%E8%AE%A1%EF%BC%9A"><span class="toc-text">内容审核结果处理与版本控制设计：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-text">问题：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%EF%BC%9A"><span class="toc-text">解决：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%88%A0%E9%99%A4%E5%92%8C%E4%B8%8B%E6%9E%B6%E8%AE%BE%E8%AE%A1%EF%BC%9A"><span class="toc-text">内容删除和下架设计：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91%E8%AE%BE%E8%AE%A1"><span class="toc-text">内容分发设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%B1%95%E7%A4%BA%E8%AE%BE%E8%AE%A1"><span class="toc-text">内容展示设计</span></a></li></ol>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/%E9%A1%B9%E7%9B%AE%E5%AD%A6%E4%B9%A0/" href="/categories/%E9%A1%B9%E7%9B%AE%E5%AD%A6%E4%B9%A0/"
+            active-action="action-categoriesE9A1B9E79BAEE5ADA6E4B9A0"
+            ><div class='name'>项目学习</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
     </div>
   </section>
 
+
+    
   
+
+  
+    
+    
+      
+  
+  <section class="widget tagcloud desktop pjax">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" style="font-size: 14px; color: #999">后端开发</a> <a href="/tags/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" style="font-size: 14px; color: #999">架构设计</a>
+    </div>
+  </section>
+
+
+    
+  
+
+
+<div class="widget-sticky pjax">
 
 </div>
 
@@ -3292,19 +3030,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- pjax占位 -->
   </div>
 
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
   <!-- Custom Files side begin -->
   
   <!-- Custom Files side end -->
 </aside>
-
 
 
           <!--此文件用来存放一些不方便取值的变量-->
@@ -4095,7 +3824,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Unknown Moon","url":"http://MOONL0323.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MOONL(林凯圳)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://MOONL0323.github.io/","sameAs":["https://github.com/volantis-x"],"description":"记录一些关于编程的思考"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://MOONL0323.github.io/","name":"Unknown Moon"}},{"@type":"ListItem","position":3,"item":{"@id":"http://MOONL0323.github.io/2025/02/03/内容发布系统/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Unknown Moon","url":"http://MOONL0323.github.io/","keywords":null,"description":"记录一些关于编程的思考","author":{"@type":"Person","name":"MOONL(林凯圳)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://MOONL0323.github.io/","description":"记录一些关于编程的思考"},"publisher":{"@type":"Organization","name":"Unknown Moon","url":"http://MOONL0323.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://MOONL0323.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"记录一些关于编程的思考","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://moonl0323.github.io/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/"},"author":{"@type":"Person","name":"MOONL(林凯圳)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://MOONL0323.github.io/"},"publisher":{"@type":"Organization","name":"Unknown Moon","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://moonl0323.github.io/2025/02/03/%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83%E7%B3%BB%E7%BB%9F/","wordCount":0,"datePublished":"2025-02-03T13:31:44.934Z","dateModified":"2024-12-23T18:11:42.369Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Unknown Moon","url":"http://MOONL0323.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"MOONL(林凯圳)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://MOONL0323.github.io/","sameAs":["https://github.com/volantis-x"],"description":"记录一些关于编程的思考"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://MOONL0323.github.io/","name":"Unknown Moon"}},{"@type":"ListItem","position":2,"item":{"@id":"http://MOONL0323.github.io/categories/项目学习/","name":"项目学习"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Unknown Moon","url":"http://MOONL0323.github.io/","keywords":null,"description":"记录一些关于编程的思考","author":{"@type":"Person","name":"MOONL(林凯圳)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://MOONL0323.github.io/","description":"记录一些关于编程的思考"},"publisher":{"@type":"Organization","name":"Unknown Moon","url":"http://MOONL0323.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://MOONL0323.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"记录一些关于编程的思考","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"MOONL(林凯圳)","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://MOONL0323.github.io/"},"publisher":{"@type":"Organization","name":"Unknown Moon","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
